@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8a2f42"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="29dp"
+        android:text="@string/sing_in"
+        android:textColor=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="120dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:autofillHints=""
+            android:background="#dda5a5"
+            android:hint="@string/firstname"
+            android:inputType=""
+            android:padding="10dp"
+            android:text="FirstName" />
+
+        <EditText
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:background="#dda5a5"
+            android:hint="@string/lastname"
+            android:importantForAutofill="no"
+            android:inputType=""
+            android:padding="10dp"
+            android:text="LastName" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="@string/enter_date_of_birthday"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:padding="15dp"
+        android:textColor="#dac87a" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="147dp"
+        android:background="#ac793d"
+        android:onClick="register"
+        android:text="Register"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
